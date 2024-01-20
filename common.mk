@@ -180,10 +180,13 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung
+<<<<<<< HEAD
 
 # FlipFlap
 PRODUCT_PACKAGES += \
     FlipFlap
+=======
+>>>>>>> 0226563 (sm7325-common: switch to AIDL fingerprint HAL)
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
