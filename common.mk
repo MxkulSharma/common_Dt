@@ -162,7 +162,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.display.config@2.0.vendor \
+    AdvancedDisplay
 
+# Doze
+PRODUCT_PACKAGES += \
+    SamsungDoze
+    
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
