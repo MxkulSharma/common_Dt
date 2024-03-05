@@ -151,7 +151,8 @@ on boot
     exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki qca_cld3_wlan qca_cld3_qca6390
     #Allow access to memory hotplug device attributes
     chown system system /sys/kernel/mem-offline/anon_migrate
-
+    chmod 440 /proc/net/unix
+    
 # For CDSP crash
 on property:ro.boot.debug_level=0x494d
     setprop vendor.fastrpc.process.attrs 1
