@@ -3,3 +3,6 @@ ro.vendor.qti.va_aosp.support=1
 
 # Netflix
 ro.netflix.bsp_rev=Q7325-SPY-33758-1
+
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
