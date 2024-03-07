@@ -74,4 +74,6 @@ void vendor_load_properties()
     property_override_quad("ro.product.device", "ro.product.vendor.device", "ro.product.product.device", "ro.product.odm.device", device.c_str());
     property_override_quad("ro.product.name", "ro.product.vendor.name", "ro.product.product.name", "ro.product.odm.name", name.c_str());
     property_override("ro.build.product", device.c_str());
+     // Misc
+    property_override("ro.apex.updatable", "false");
 }
