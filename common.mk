@@ -446,6 +446,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung \
     hardware/samsung/aidl/power-libperfmgr
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # Prop files
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
