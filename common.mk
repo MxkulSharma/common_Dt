@@ -103,6 +103,10 @@ PRODUCT_COPY_FILES += \
 
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
+  
+# Dolby
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
