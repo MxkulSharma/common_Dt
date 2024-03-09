@@ -339,6 +339,9 @@ PRODUCT_PACKAGES += \
     libjson \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
+# QESDK: Qualcomm Enhanced SDK
+PRODUCT_ENABLE_QESDK := true
+
 # Recovery
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
