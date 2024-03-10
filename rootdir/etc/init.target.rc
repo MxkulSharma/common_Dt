@@ -197,6 +197,10 @@ service vendor.per_proxy /vendor/bin/pm-proxy
 #    group system wakelock
 #    disabled
 
+on init
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
 service vendor.mdm_launcher /vendor/bin/sh /vendor/bin/init.mdm.sh
     class core
     oneshot
