@@ -15,3 +15,7 @@ allow hal_audio_default sysfs_audio_writable:dir search;
 
 # ro.multisim*
 dontaudit hal_audio_default { default_prop radio_prop }:file { getattr map open read };
+
+# Dolby
+allow hal_audio_default hal_dms_hwservice:hwservice_manager find;
+binder_call(hal_audio_default, hal_dms_default)

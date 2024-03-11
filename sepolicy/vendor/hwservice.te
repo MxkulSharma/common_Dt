@@ -1,3 +1,8 @@
 type hal_bluetooth_a2dp_hwservice, hwservice_manager_type;
 
 type hal_thermal_samsung_hwservice, hwservice_manager_type;
+
+type hal_dms_hwservice, hwservice_manager_type;
+
+# Performance
+type hal_performance_oplus_hwservice, hwservice_manager_type;

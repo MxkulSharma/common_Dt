@@ -3,6 +3,7 @@
 /data/vendor/conn(/.*)?                      u:object_r:conn_vendor_data_file:s0
 /data/vendor/secradio(/.*)?                  u:object_r:radio_vendor_data_file:s0
 /data/vendor/gatekeeper(/.*)?                u:object_r:gatekeeper_vendor_data_file:s0
+/data/vendor/dolby(/.*)?                     u:object_r:vendor_data_file:s0
 
 # DEV
 /dev/block/platform/soc/1d84000.ufshc/by-name/dsp            u:object_r:dsp_block_device:s0
@@ -65,3 +66,4 @@
 /(vendor|system/vendor)/bin/hw/android.hardware.sensors-service.samsung-multihal                            u:object_r:hal_sensors_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator\-service\.samsung                                u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.1-service-samsung                               u:object_r:hal_health_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                                    u:object_r:hal_dms_default_exec:s0

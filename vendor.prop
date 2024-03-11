@@ -229,3 +229,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
+
+# Dolby
+ro.vendor.dolby.dax.version=DAX3_3.5.1.28_r1
+ro.vendor.product.device.db=OP_DEVICE
+ro.vendor.product.manufacturer.db=OP_PHONE
+vendor.product.device=OP_PHONE
+vendor.product.manufacturer=OPD
