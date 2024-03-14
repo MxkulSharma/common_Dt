@@ -17,6 +17,7 @@
 COMMON_PATH := device/samsung/sm7325-common
 
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-derp
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
