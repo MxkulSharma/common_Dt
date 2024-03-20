@@ -377,6 +377,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+<<<<<<< HEAD
     <!-- DOLBY HAL service -->
     <hal format="hidl"> 
         <name>vendor.dolby.hardware.dms</name> 
@@ -387,6 +388,8 @@
 	    <instance>default</instance>
 	 </interface>
     </hal>
+=======
+>>>>>>> derp
     <hal format="hidl">
         <name>vendor.samsung.hardware.radio.channel</name>
         <transport>hwbinder</transport>
