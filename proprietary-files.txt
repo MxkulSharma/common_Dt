@@ -725,7 +725,7 @@ vendor/lib64/vendor.qti.hardware.iop@2.0.so
 vendor/etc/init/ipa_fws.rc
 
 # Keymaster
--vendor/lib64/libskeymaster4device.so|212916a4c8d6bded714fbf1ac8ec1fff5161de3c
+-vendor/lib64/libskeymaster4device.so|bc98d0220e22831a46c9229b0da218876627c3c3
 vendor/lib64/libkeymaster_helper.so
 
 # Machine learning

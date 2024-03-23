@@ -422,8 +422,12 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v30.so \
-    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v33.so
 
+PRODUCT_PACKAGES += \
+    libcrypto-v33 \
+    libshim_crypto:64 \
+    libssl-v33
+    
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
