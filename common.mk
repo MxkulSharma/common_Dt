@@ -97,6 +97,11 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     audio_parameter_service.samsung_sm7325
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
+
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/audio/configs/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(COMMON_PATH)/audio/configs/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf\
