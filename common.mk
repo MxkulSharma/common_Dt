@@ -364,6 +364,10 @@ PRODUCT_ENABLE_QESDK := true
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
